@@ -23,6 +23,7 @@
 body {
     display: grid;
     place-content: center;
+    background-color: var(--very-light-gray-bg-hd-bt);
 }
 
 h2 {
