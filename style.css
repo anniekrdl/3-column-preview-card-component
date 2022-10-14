@@ -1,0 +1,133 @@
+:root {
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-par : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg-hd-bt: hsl(0, 0%, 95%);
+
+}
+
+*, a {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom:  10px;
+}
+
+
+button {
+    color: black;
+    font-size: 10px;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.8;
+
+}
+
+
+
+.card {
+    margin: 20px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+.sedan-card {
+    border-radius: 7px 7px 0 0 ;
+    background-color: var(--bright-orange);
+    padding: 45px;
+
+}
+
+.sedan-card button {
+    color: var(--bright-orange);
+}
+
+.suvs-card {
+    background-color: var(--dark-cyan);
+    padding: 45px;
+}
+
+.suvs-card button {
+    color: var(--dark-cyan);
+}
+
+.luxury-card {
+    border-radius: 0 0 7px 7px;
+    background-color: var(--very-dark-cyan);
+    padding: 45px;
+}
+
+.luxury-card button {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+    button {
+        margin-top: 70px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .sedan-card {
+        padding: 50px;
+        border-radius: 7px 0 0 7px;
+    }
+
+    .suvs-card {
+        padding: 50px;
+    }
+
+    .luxury-card {
+        padding: 50px;
+        border-radius: 0 7px 7px 0;
+    }
+    
+}
+
+
+
